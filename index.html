@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samvat Talks | Official Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #11182d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #263b70, #0b1020 70%);
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 19px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 20px 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2563eb;
+    transform: translateY(-4px);
+}
+
+/* SECTIONS */
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #18233d;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #334568;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #60a5fa;
+}
+
+.card .emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+    background: #11182d;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* FOOTER */
+footer {
+    background: #080d19;
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SAMVAT TALKS</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#scratch">Scratch</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>Welcome to <span>Samvat Talks!</span></h1>
+    <p>
+        Welcome to my little corner of the internet!
+        Explore my videos, games, animations and
+        creative projects.
+    </p>
+
+    <div>
+        <a class="btn"
+        href="https://www.youtube.com/@samvattalks"
+        target="_blank">▶ Visit My Channel</a>
+
+        <a class="btn" href="#scratch">Explore Scratch</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+      
+</section>
+
+<!-- YOUTUBE -->
+<section id="youtube">
+    <h2>My YouTube Channel</h2>
+    <p class="subtitle">Check out my videos and adventures!</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">▶️</div>
+            <h3>Samvat Talks</h3>
+            <p>My official YouTube channel. Discover my latest videos!</p>
+            <a href="https://www.youtube.com/@samvattalks"
+            target="_blank">Visit Channel →</a>
+        </div>
+    </div>
+</section>
+
+<!-- SCRATCH -->
+<section id="scratch" class="about">
+    <h2>My Scratch Accounts</h2>
+    <p class="subtitle">Explore my projects and games!</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🎮</div>
+            <h3>Samgap</h3>
+            <p>Check out my Scratch projects and creations.</p>
+            <a href="https://scratch.mit.edu/users/samgap/"
+            target="_blank">Visit Samgap →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🕹️</div>
+            <h3>Scrasingle</h3>
+            <p>Explore another one of my Scratch accounts!</p>
+            <a href="https://scratch.mit.edu/users/scrasingle/"
+            target="_blank">Visit Scrasingle →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Samvat Talks | Made with ❤️ and code</p>
+    <p>Thanks for visiting!</p>
+</footer>
+
+</body>
+</html>
+
